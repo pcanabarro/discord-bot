@@ -1,0 +1,25 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcanabarro/discord-bot.git"
+  },
+  "author": "pcanabarro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pcanabarro/discord-bot/issues"
+  },
+  "homepage": "https://github.com/pcanabarro/discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "nodemon": "^3.1.3"
+  }
+}
