@@ -33,5 +33,13 @@ export default [
         required: true
       }
     ]
-  }
+  },
+  {
+    name: "stop",
+    description: "Stop bot!",
+  },
+  {
+    name: "play",
+    description: "PLAY bot!",
+  },
 ]
