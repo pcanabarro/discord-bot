@@ -4,7 +4,6 @@ import { joinVoiceChannel, createAudioPlayer, NoSubscriberBehavior, createAudioR
 import commands from "./utils/commands.js"
 import constants from "./utils/constants.js"
 
-const resource = createAudioResource(path.join("src/misc/buzzimbro.mp3"))
 const rest = new REST({ version: 10 }).setToken(constants.DISCORD_USER_TOKEN)
 const client = new Client({
   intents: [
@@ -62,6 +61,7 @@ client.on("interactionCreate", async interaction => {
           guildId: channel.guild.id,
           adapterCreator: channel.guild.voiceAdapterCreator
         })
+        const resource = createAudioResource(path.join("src/misc/buzzimbro.mp3"))
         audioPlayer.play(resource)
         connection.subscribe(audioPlayer)
         interaction.reply("Playing!")
